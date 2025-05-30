@@ -1,12 +1,11 @@
 :root {
-    --text-color: #DBE4EF;
-    --card-front-color: #144480;
-    --card-back-color: #00F4BF;
+    --text-color: #ffaaed;
+    --card-front-color: #ee22aa;
+    --card-back-color: #740646;
 }
 
-
 body {
-    background: url('img/bg-stars.webp');
+    background: url('img/Pink-desktop-wallpaper-aesthetic.webp');
     font-family: Bai Jamjuree;
 }
 
@@ -15,32 +14,51 @@ body {
 }
 
 .cartao {
-     margin: 1rem 1rem; 
-     background-color: aqua; 
+    margin: 1rem 1rem;
     height: 20rem;
     flex-grow: 1;
     flex-basis: calc(33% - 6rem);
 }
 
 .cartao__conteudo {
+    background-color: var(--card-front-color);
     text-align: center;
     /* background-color: aquamarine; */
     height: 100%;
 }
 
 .cartao__conteudo h3 {
-    color: var(--text-color)
-    
+    color: var(--text-color);
+    border: 1px solid var(--text-color);
     text-align: left;
     padding: 0.5rem;
     position: absolute;
-    margin: 0.6rem;
+    margin: 0.2rem;
     border-radius: 0.6rem;
     font-size: 1vw;
 }
 
+.cartao__conteudo p {
+    margin-top: 1rem;
+    padding: 2rem;
+}
+
+.cartao__conteudo__pergunta p {
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+.cartao__conteudo__resposta p {
+    color: var(--card-back-color);
+    font-weight: 700;
+}
+
+.cartao:hover .cartao__conteudo {
+    transform: rotateY('180deg');
+}
+
 footer {
-    background-color: black;
+    background-color: rgb(172, 0, 114);
     color: white;
     position: fixed;
     bottom: 0;
